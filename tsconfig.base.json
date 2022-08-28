@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "target": "ESNEXT",
+        "module": "ESNEXT",
+        "allowJs": false,
+        "checkJs": false,
+        "strict": true,
+        "skipLibCheck": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "noUncheckedIndexedAccess": true,
+        "pretty": true,
+        "outDir": "dist",
+        "noEmit": true,
+        "preserveWatchOutput": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true
+    }
+}

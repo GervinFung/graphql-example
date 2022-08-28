@@ -1,0 +1,7 @@
+scalar Date
+
+type Todo {
+    title: String!
+    description: String!
+    createdOn: Date!
+}

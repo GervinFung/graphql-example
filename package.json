@@ -1,0 +1,12 @@
+{
+    "license": "MIT",
+    "scripts": {
+        "install": "(trap 'kill 0' INT; cd server && yarn setup & cd client && yarn setup & cd common && yarn setup)",
+        "generate": "cd server && yarn generate & cd client && yarn generate",
+        "prebuild": "yarn generate",
+        "build": "NODE_ENV=production cd server && yarn build & cd client && yarn build",
+        "start": "(trap 'kill 0' INT; cd server && yarn start & cd client && yarn dev)",
+        "serve": "cd server && yarn serve",
+        "clean": "rm -rf **/build **/dist"
+    }
+}

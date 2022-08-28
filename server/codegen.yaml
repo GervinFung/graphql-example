@@ -1,0 +1,18 @@
+overwrite: true
+schema: src/**/*.graphql
+documents: null
+generates:
+    src/graphql/generated/index.ts:
+        config:
+            # https://www.graphql-code-generator.com/plugins/typescript/typescript#avoidoptionals-boolean-default-value-false
+            avoidOptionals: true
+            enumsAsTypes: true
+            immutableTypes: true
+            maybeValue: T | undefined
+            defaultScalarType: unknown
+            strictScalars: true
+            scalars:
+                Date: Date
+        plugins:
+            - 'typescript'
+            - 'typescript-resolvers'

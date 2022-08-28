@@ -1,0 +1,7 @@
+mutation AddTodo($todo: AddToDoParams!) {
+    addTodo(todo: $todo) {
+        title
+        description
+        createdOn
+    }
+}

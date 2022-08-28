@@ -1,0 +1,8 @@
+input AddToDoParams {
+    title: String!
+    description: String!
+    createdOn: Date!
+}
+type Mutation {
+    addTodo(todo: AddToDoParams!): [Todo!]!
+}

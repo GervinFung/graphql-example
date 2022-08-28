@@ -1,0 +1,15 @@
+{
+    "name": "common",
+    "description": "Common SDK for Client and Server",
+    "license": "MIT",
+    "scripts": {
+        "setup": "yarn install --frozen-lockfile",
+        "typecheck-watch": "tsc -p tsconfig.json --watch"
+    },
+    "dependencies": {
+        "graphql": "^16.6.0"
+    },
+    "devDependencies": {
+        "typescript": "^4.8.2"
+    }
+}
